@@ -1,0 +1,28 @@
+/* [ START ] Main Section */
+main {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+main img {
+    margin-bottom: 2rem;
+}
+main div {
+    width: 194px;
+    margin: auto;
+    margin-bottom: 32px;
+    padding: 4px 20px;
+    border-radius: 22.5px;
+    background: #262E38;
+    text-align: center;
+}
+main div p {
+    color: var(--Orange, #FC7614);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+main > p {
+    margin-bottom: 0;
+}
+/* [ END ] Main Section */
