@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/main.css">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-    <title>Interactive rating</title>
-</head>
-<body>
-    <main>
-        <div class="icon">
-            <img src="./svgs/icon-star.svg" alt="icon stra">
-        </div>
-        <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-        <div class="rating">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-        </div>
-        <button>SUBMIT</button>
-    </main>
-    <script src="main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Nice and small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!">
+		<title>Interactive Rating Component</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="center">
+		<main>
+			<!-- [START] Rating Slide -->
+			<article>
+				<header>
+					<span class="center">
+						<img src="./svgs/icon-star.svg" />
+					</span>
+					<h2>How did we do?</h2>
+				</header>
+				<section>
+					<p>
+						Please let us know how we did with your support request.
+						All feedback is appreciated to help us improve our
+						offering!
+					</p>
+					<ul id="rating">
+						<li><button value="1">1</button></li>
+						<li><button value="2">2</button></li>
+						<li><button value="3">3</button></li>
+						<li><button value="4">4</button></li>
+						<li><button value="5">5</button></li>
+					</ul>
+				</section>
+				<footer>
+					<button id="submitButton" disabled>submit</button>
+				</footer>
+			</article>
+			<!-- [END] Rating Slide -->
+			<!-- [START] Score Slide -->
+			<article>
+				<header>
+					<img
+						src="./svgs/illustration-thank-you.svg"
+						alt="Thank you"
+					/>
+				</header>
+				<span id="score">You selected <span></span> out of 5</span>
+				<footer>
+					<h2>Thank you!</h2>
+					<p>
+						We appreciate you taking the time to give a rating. If
+						you ever need more support, don’t hesitate to get in
+						touch!
+					</p>
+				</footer>
+			</article>
+			<!-- [END] Score Slide -->
+		</main>
+		<script src="main.js"></script>
+	</body>
 </html>
