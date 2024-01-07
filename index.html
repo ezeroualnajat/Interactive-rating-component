@@ -3,18 +3,32 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Nice and small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!">
+		<meta
+			name="description"
+			content="Nice and small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!"
+		/>
 		<title>Interactive Rating Component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body class="center">
 		<main>
+			<h1 class="sr__seo">Interactive Rating Component</h1>
 			<!-- [START] Rating Slide -->
-			<article>
+			<article class="rating-slide">
 				<header>
-					<span class="center">
-						<img src="./svgs/icon-star.svg" />
+					<span class="center" aria-hidden="true">
+						<img
+							src="./svgs/icon-star.svg"
+							alt="star"
+							title="star"
+						/>
 					</span>
 					<h2>How did we do?</h2>
 				</header>
@@ -38,11 +52,12 @@
 			</article>
 			<!-- [END] Rating Slide -->
 			<!-- [START] Score Slide -->
-			<article>
-				<header>
+			<article class="score-slide">
+				<header aria-hidden="true">
 					<img
 						src="./svgs/illustration-thank-you.svg"
 						alt="Thank you"
+						title="Thank you"
 					/>
 				</header>
 				<span id="score">You selected <span></span> out of 5</span>
